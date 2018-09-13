@@ -9,12 +9,13 @@
     </head>
     <body>
         <div class="container">
+            <h1>Envio de SMS - <a href="http://www.totalvoice.com.br/">TotalVoice</a></h1>
             <form action="envio" method="post">
             @csrf
 
                 <div class="form-group">
                     <label for="number">Numero</label>
-                    <input type="number" name="number" class="form-control" id="numberlabel" aria-describedby="number-phone" placeholder="Digite seu numero">
+                    <input type="number" name="number" class="form-control" id="numberlabel" aria-describedby="number-phone" placeholder="+55 11 99999-9999">
                 </div>
                 <div class="form-group">
                     <label for="text">Texto</label>

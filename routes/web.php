@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('novo', 'SmsController@index')->name('sms.index');
+Route::get('/', 'SmsController@index')->name('sms.index');
 Route::post('envio', 'SmsController@envio')->name('sms.envio');
 
 
